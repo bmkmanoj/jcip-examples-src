@@ -9,14 +9,16 @@ import java.util.*;
  *
  * @author Brian Goetz and Tim Peierls
  */
-class Secrets {
-    public static Set<Secret> knownSecrets;
+class Secrets
+{
+	public static Set<Secret> knownSecrets;
 
-    public void initialize() {
-        knownSecrets = new HashSet<Secret>();
-    }
+	public void initialize()
+	{
+		knownSecrets = new HashSet<Secret>();
+	}
 }
 
-
-class Secret {
+class Secret
+{
 }

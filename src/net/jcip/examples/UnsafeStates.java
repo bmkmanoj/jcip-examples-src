@@ -7,12 +7,13 @@ package net.jcip.examples;
  *
  * @author Brian Goetz and Tim Peierls
  */
-class UnsafeStates {
-    private String[] states = new String[]{
-        "AK", "AL" /*...*/
-    };
+class UnsafeStates
+{
+	private String[] states = new String[] { "AK", "AL" /* ... */
+	};
 
-    public String[] getStates() {
-        return states;
-    }
+	public String[] getStates()
+	{
+		return states;
+	}
 }

@@ -9,13 +9,17 @@ import net.jcip.annotations.*;
  *
  * @author Brian Goetz and Tim Peierls
  */
-public class PrivateLock {
-    private final Object myLock = new Object();
-    @GuardedBy("myLock") Widget widget;
+public class PrivateLock
+{
+	private final Object myLock = new Object();
+	@GuardedBy("myLock")
+	Widget widget;
 
-    void someMethod() {
-        synchronized (myLock) {
-            // Access or modify the state of widget
-        }
-    }
+	void someMethod()
+	{
+		synchronized (myLock)
+		{
+			// Access or modify the state of widget
+		}
+	}
 }
